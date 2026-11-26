@@ -1,0 +1,30 @@
+name: Hotfix
+description: Urgent fix branched from the production tag
+title: "[Hotfix] "
+type: Hotfix
+labels: ['type: bug', 'priority: P0']
+body:
+  - type: textarea
+    id: impact
+    attributes:
+      label: "Impact"
+    validations:
+      required: true
+  - type: textarea
+    id: smallest-possible-fix
+    attributes:
+      label: "Smallest possible fix"
+    validations:
+      required: true
+  - type: textarea
+    id: rollback
+    attributes:
+      label: "Rollback"
+    validations:
+      required: true
+  - type: input
+    id: production-tag-affected
+    attributes:
+      label: "Production tag affected"
+    validations:
+      required: true
