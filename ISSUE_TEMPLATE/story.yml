@@ -1,0 +1,47 @@
+name: Story
+description: User value with acceptance criteria
+title: ""
+type: Story
+labels: []
+body:
+  - type: textarea
+    id: user-story-as-a-i-want-so-that
+    attributes:
+      label: "User story (as a, I want, so that)"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria-given-when-then
+    attributes:
+      label: "Acceptance criteria (Given / When / Then)"
+    validations:
+      required: true
+  - type: input
+    id: design-link
+    attributes:
+      label: "Design link"
+    validations:
+      required: false
+  - type: textarea
+    id: test-notes
+    attributes:
+      label: "Test notes"
+    validations:
+      required: false
+  - type: textarea
+    id: analytics
+    attributes:
+      label: "Analytics"
+    validations:
+      required: false
+  - type: dropdown
+    id: estimate
+    attributes:
+      label: "Estimate"
+      options:
+        - XS
+        - S
+        - M
+        - L (consider splitting)
+    validations:
+      required: true
