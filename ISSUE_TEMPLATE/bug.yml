@@ -1,0 +1,47 @@
+name: Bug
+description: Something is broken
+title: "[Bug] "
+type: Bug
+labels: ['type: bug']
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "What happened"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected"
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to reproduce"
+    validations:
+      required: true
+  - type: input
+    id: environment-dev-staging-prod-app-version
+    attributes:
+      label: "Environment (dev, staging, prod, app version)"
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      options:
+        - S1 outage or data loss
+        - S2 major degradation
+        - S3 minor
+        - S4 cosmetic
+    validations:
+      required: true
+  - type: textarea
+    id: logs-or-screenshots
+    attributes:
+      label: "Logs or screenshots"
+    validations:
+      required: false
