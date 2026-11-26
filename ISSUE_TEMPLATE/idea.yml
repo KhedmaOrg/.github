@@ -1,0 +1,24 @@
+name: Idea
+description: Raw idea for product triage (within 2 working days)
+title: "[Idea] "
+type: Idea
+labels: []
+body:
+  - type: textarea
+    id: the-idea
+    attributes:
+      label: "The idea"
+    validations:
+      required: true
+  - type: textarea
+    id: who-benefits-and-why
+    attributes:
+      label: "Who benefits and why"
+    validations:
+      required: true
+  - type: textarea
+    id: rough-value-users-revenue-risk
+    attributes:
+      label: "Rough value (users, revenue, risk)"
+    validations:
+      required: false
