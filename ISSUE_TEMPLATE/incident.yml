@@ -1,0 +1,47 @@
+name: Incident
+description: Production incident record
+title: "[Incident] "
+type: Incident
+labels: ['type: incident']
+body:
+  - type: textarea
+    id: impact-and-who-is-affected
+    attributes:
+      label: "Impact and who is affected"
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      options:
+        - S1
+        - S2
+        - S3
+        - S4
+    validations:
+      required: true
+  - type: textarea
+    id: timeline
+    attributes:
+      label: "Timeline"
+    validations:
+      required: true
+  - type: input
+    id: incident-commander
+    attributes:
+      label: "Incident commander"
+    validations:
+      required: true
+  - type: textarea
+    id: mitigation-rollback-or-flag-off-first
+    attributes:
+      label: "Mitigation (rollback or flag off first)"
+    validations:
+      required: false
+  - type: input
+    id: postmortem-link
+    attributes:
+      label: "Postmortem link"
+    validations:
+      required: false
