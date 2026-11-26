@@ -1,0 +1,48 @@
+name: Epic
+description: A goal with a success metric and child stories
+title: "[Epic] "
+type: Epic
+labels: []
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: "Goal"
+    validations:
+      required: true
+  - type: textarea
+    id: success-metric
+    attributes:
+      label: "Success metric"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "Scope"
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: "Out of scope"
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: "Risks"
+    validations:
+      required: false
+  - type: textarea
+    id: rollout-plan
+    attributes:
+      label: "Rollout plan"
+    validations:
+      required: true
+  - type: textarea
+    id: child-stories
+    attributes:
+      label: "Child stories"
+    validations:
+      required: false
